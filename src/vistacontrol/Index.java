@@ -27,12 +27,14 @@ public class Index {
         System.out.print("Opcion [1-5]: ");
     }
     
+    public static int decicion;
+    
     public static void switches() {
-    int opcion;
+    
         do {
             menu_principal();
-            opcion = Leer.entero();
-            switch (opcion) {
+            decicion = Leer.entero();
+            switch (decicion) {
                 case 1:
                     switch_autor();
                     break;
@@ -53,12 +55,12 @@ public class Index {
                 case 7:
                     break;
                 case 8:
-                    System.out.println("Hasta la proxima...");
+                    System.out.println("\n Hasta la proxima...\n");
                     break;
                 default:
                 switches();
             }
-        } while (opcion != 8);
+        } while (decicion != 8);
     }
     
     public static void switch_autor() {
