@@ -16,9 +16,9 @@ public class Index {
         System.out.println("8. Salir");
         System.out.print("Opcion [1-8]: ");
     }
-    
+
     public static void menu_secundario() {
-        
+
         System.out.println("1. Agregar");
         System.out.println("2. Eliminar");
         System.out.println("3. Editar");
@@ -26,15 +26,19 @@ public class Index {
         System.out.println("5. Salir");
         System.out.print("Opcion [1-5]: ");
     }
-    
-    public static int decicion;
-    
+
+    public static int opcion;
+
+    public static void error() {
+
+    }
+
     public static void switches() {
-    
+
         do {
             menu_principal();
-            decicion = Leer.entero();
-            switch (decicion) {
+            opcion = Leer.entero();
+            switch (opcion) {
                 case 1:
                     switch_autor();
                     break;
@@ -58,11 +62,14 @@ public class Index {
                     System.out.println("\n Hasta la proxima...\n");
                     break;
                 default:
-                switches();
+                    if (opcion != 8) {
+                        System.out.println("\n Por favor solo opciones en el menu...");
+                        switches();
+                    }
             }
-        } while (decicion != 8);
+        } while (opcion != 8);
     }
-    
+
     public static void switch_autor() {
         int opcion;
         do {
@@ -82,11 +89,14 @@ public class Index {
                     switches();
                     break;
                 default:
-                switch_autor();
+                    if (opcion != 8) {
+                        System.out.println("\n Por favor solo opciones en el menu...");
+                        switch_autor();
+                    }
             }
         } while (opcion != 5);
     }
-    
+
     public static void switch_pais() {
         int opcion;
         do {
@@ -106,11 +116,14 @@ public class Index {
                     switches();
                     break;
                 default:
-                switch_pais();
+                    if (opcion != 8) {
+                        System.out.println("\n Por favor solo opciones en el menu...");
+                        switch_pais();
+                    }
             }
         } while (opcion != 5);
     }
-    
+
     public static void switch_editorial() {
         int opcion;
         do {
@@ -130,11 +143,14 @@ public class Index {
                     switches();
                     break;
                 default:
-                switch_editorial();
+                    if (opcion != 8) {
+                        System.out.println("\n Por favor solo opciones en el menu...");
+                        switch_editorial();
+                    }
             }
         } while (opcion != 5);
     }
-    
+
     public static void switch_usuario() {
         int opcion;
         do {
@@ -154,11 +170,14 @@ public class Index {
                     switches();
                     break;
                 default:
-                switch_usuario();
+                    if (opcion != 8) {
+                        System.out.println("\n Por favor solo opciones en el menu...");
+                        switch_usuario();
+                    }
             }
         } while (opcion != 5);
     }
-    
+
     public static void switch_libro() {
         int opcion;
         do {
@@ -178,15 +197,18 @@ public class Index {
                     switches();
                     break;
                 default:
-                switch_libro();
+                    if (opcion != 8) {
+                        System.out.println("\n Por favor solo opciones en el menu...");
+                        switch_libro();
+                    }
             }
         } while (opcion != 5);
     }
-    
+
     public static void inicio() {
         switches();
     }
-    
+
     public static void main(String[] args) {
         inicio();
     }
