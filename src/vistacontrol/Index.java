@@ -5,6 +5,7 @@ import utils.Leer;
 public class Index {
 
     public static void menu_principal() {
+        System.out.println("\n\t ~~ MENU ~~");
         System.out.println("1. Datos Autor");
         System.out.println("2. Datos País");
         System.out.println("3. Datos Editorial");
@@ -17,6 +18,7 @@ public class Index {
     }
     
     public static void menu_secundario() {
+        
         System.out.println("1. Agregar");
         System.out.println("2. Eliminar");
         System.out.println("3. Editar");
@@ -62,6 +64,7 @@ public class Index {
     public static void switch_autor() {
         int opcion;
         do {
+            System.out.println("\n\t ~~ AUTOR ~~");
             menu_secundario();
             opcion = Leer.entero();
             switch (opcion) {
@@ -85,6 +88,7 @@ public class Index {
     public static void switch_pais() {
         int opcion;
         do {
+            System.out.println("\n\t ~~ PAIS ~~");
             menu_secundario();
             opcion = Leer.entero();
             switch (opcion) {
@@ -108,6 +112,7 @@ public class Index {
     public static void switch_editorial() {
         int opcion;
         do {
+            System.out.println("\n\t ~~ EDITORIAL ~~");
             menu_secundario();
             opcion = Leer.entero();
             switch (opcion) {
@@ -131,6 +136,7 @@ public class Index {
     public static void switch_usuario() {
         int opcion;
         do {
+            System.out.println("\n\t ~~ USUARIO ~~");
             menu_secundario();
             opcion = Leer.entero();
             switch (opcion) {
@@ -154,6 +160,7 @@ public class Index {
     public static void switch_libro() {
         int opcion;
         do {
+            System.out.println("\n\t ~~ LIBRO ~~");
             menu_secundario();
             opcion = Leer.entero();
             switch (opcion) {
