@@ -29,6 +29,10 @@ public class Libro {
         this.ideditorial = ideditorial;
     }
 
+    public Libro(int id, String titulo, String ISBN, String paginas, String año, String stock, String stock_disponibles) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public int getIdlibro() {
         return idlibro;
     }

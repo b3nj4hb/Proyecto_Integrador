@@ -21,6 +21,14 @@ public class Editorial {
         this.estado = estado;
     }
 
+    public Editorial(int id, String nombre, String codigo, String direccion, String URL, String estado) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Editorial(String nombre, String codigo, String direccion, String URL, String estado) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public int getIdeditorial() {
         return ideditorial;
     }

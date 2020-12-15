@@ -15,6 +15,10 @@ public class Pais {
         this.estado = estado;
     }
 
+    public Pais(String nombre, String estado) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public int getIdpais() {
         return idpais;
     }

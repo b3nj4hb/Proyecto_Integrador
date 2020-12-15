@@ -15,6 +15,10 @@ public class Autor {
         this.apellidos = apellidos;
     }
 
+    public Autor(String nombre, String apellidos) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public int getIdautor() {
         return idautor;
     }

@@ -19,6 +19,14 @@ public class Usuario {
         this.estado = estado;
     }
 
+    public Usuario(int id, String nombre, String apellidos, String dni, String estado) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Usuario(String nombre, String apellidos, String dni, String estado) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public int getIdusuario() {
         return idusuario;
     }
