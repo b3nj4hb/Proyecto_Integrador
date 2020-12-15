@@ -59,13 +59,10 @@ public class Index {
                 case 7:
                     break;
                 case 8:
-<<<<<<< HEAD
                     System.out.println("--------------------------------");
                     System.out.println("\n Hasta la proxima...\n");
                     System.out.println("--------------------------------");
-=======
                     System.out.println("\n Hasta la proxima...\n");
->>>>>>> 3577ebe5f394ab3a05b07aa8d6aa7844640798f9
                     break;
                 default:
                     if (opcion != 8) {
