@@ -73,7 +73,6 @@ public class Index {
                     System.out.println("--------------------------------");
                     System.out.println("\n Hasta la proxima...\n");
                     System.out.println("--------------------------------");
-                    System.out.println("\n Hasta la proxima...\n");
                     break;
                 default:
                     if (opcion != 8) {
@@ -98,6 +97,7 @@ public class Index {
                 case 3:
                     break;
                 case 4:
+                    listarAutor();
                     break;
                 case 5:
                     switches();
